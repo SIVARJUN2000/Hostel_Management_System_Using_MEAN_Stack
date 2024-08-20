@@ -1,0 +1,23 @@
+<p>admin-login works!</p>
+
+<html>
+    <body>
+        
+        <div class="container">
+            <form action="">
+                
+                <h1>Admin Login Form</h1>
+                <div >
+                    <label>User Id</label>
+                    <input type="text" class="form-control" required name="user_id"  [(ngModel)]="admin.user_id">
+            
+                    <label>Password</label>
+                    <input type="password" class="form-control" required name="password"  [(ngModel)]="admin.password">
+                </div><a  routerLink="/home1" routerLinkActive="active" >
+                 <input type="submit"class="btn"></a>
+                
+            </form>
+        </div>
+    </body>
+</html>
+

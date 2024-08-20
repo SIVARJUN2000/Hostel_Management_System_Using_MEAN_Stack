@@ -1,0 +1,34 @@
+<html>
+    <body>
+        
+        <div class="container">
+            <form action="">
+                <span [ngStyle] ="{'color':'red'}" *ngIf="show"> Invalid details entered! </span><br>
+                <h1>Payment Details</h1>
+                <div >
+
+                    <label>Payment Id</label>
+                    <input type="number" class="form-control" required name="payment_id"  [(ngModel)]="pyd.payment_id">
+                    <label> student Id</label>
+                    <input type="number" class="form-control" required name="customer_id"  [(ngModel)]="pyd.customer_id">
+                    <label> Booking Id</label>
+                    <input type="nummber" class="form-control" required name="booking_ID"  [(ngModel)]="pyd.booking_ID">
+                    <label> Room Price</label>
+                    <input type="number" class="form-control" required name="roomprice"  [(ngModel)]="pyd.roomprice">
+                    <label> No of Days</label>
+                    <input type="number" class="form-control" required name="no_of_days"  [(ngModel)]="pyd.no_of_days">
+                    <label> Total Paymnts</label>
+                    <input type="number" class="form-control" required name="totalpayments"  [(ngModel)]="pyd.totalpayments">
+                </div><a >
+                <input type="submit"class="btn" (click)="submit()" ></a>
+                <a  routerLink="/home1" routerLinkActive="active"   >
+                    <button    class="btn"> cancel</button></a>
+                
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+
